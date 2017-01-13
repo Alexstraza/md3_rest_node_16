@@ -9,4 +9,10 @@ module.exports = function(app) {
         .get(user.read);
 
     app.param('userID', user.getUserByID);
+
+    app.route('/talents')
+    	.get(user.talents);
+
+    app.route('')
+    	.get(user.talents);	
 };
